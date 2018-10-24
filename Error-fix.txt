@@ -2,3 +2,8 @@
 mkdir -p $HOME/.kube
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+# If node status is NotReady; Reason:KubeletNotReady;
+# Message: runtime network not ready: NetworkReady=false reason:NetworkPluginNotReady message:docker: network plugin is not ready: cni config uninitialized
+# Run below command to resolve above issue
+$ kubectl apply --filename https://git.io/weave-kube-1.6
