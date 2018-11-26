@@ -1,7 +1,7 @@
 [master]
 #k8s-master ansible_host=172.31.80.196 ansible_user=host ansible_ssh_pass=host
-172.31.80.196
+172.31.31.213
 
 [workers]
 #k8s-node1 ansible_host=172.31.86.118 ansible_user=host ansible_ssh_pass=host
-172.31.86.118
+172.31.16.185
